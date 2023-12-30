@@ -8,6 +8,10 @@ const TaskBoards = () => {
     // Navigate to the "Insert" route
     navigate('/Insert');
   };
+  const handleEdit = () => {
+    // Navigate to the "Insert" route
+    navigate('/Data');
+  };
 
 
   const [startDate, setStartDate] = useState('');
@@ -91,7 +95,7 @@ const TaskBoards = () => {
             <div>
               {/* Render the specified JSX only when the task status is "To Do" */}
               {toDoTasks.length > 0 && (
-                <div className="rounded-lg bg-white shadow-[0px_0px_8px_rgba(54,_89,_226,_0.16)] w-[270px] overflow-hidden flex flex-col items-start justify-start p-4 box-border gap-[10px]" onClick={handleAddNew} style={{ cursor: 'pointer' }}>
+                <div className="rounded-lg bg-white shadow-[0px_0px_8px_rgba(54,_89,_226,_0.16)] w-[270px] overflow-hidden flex flex-col items-start justify-start p-4 box-border gap-[10px]" onClick={handleEdit} style={{ cursor: 'pointer' }}>
                   <div className="relative leading-[24px] font-semibold">
                     {taskName}
                   </div>
@@ -152,7 +156,7 @@ const TaskBoards = () => {
           <div>
       {/* Render the specified JSX only when the task status is "To Do" */}
       {inProgressTasks.length > 0 && (
-        <div className="rounded-lg bg-white shadow-[0px_0px_8px_rgba(54,_89,_226,_0.16)] w-[270px] overflow-hidden flex flex-col items-start justify-start p-4 box-border gap-[10px]" onClick={handleAddNew} style={{ cursor: 'pointer' }}>
+        <div className="rounded-lg bg-white shadow-[0px_0px_8px_rgba(54,_89,_226,_0.16)] w-[270px] overflow-hidden flex flex-col items-start justify-start p-4 box-border gap-[10px]" onClick={handleEdit} style={{ cursor: 'pointer' }}>
           <div className="relative leading-[24px] font-semibold">
             {taskName}
           </div>
@@ -221,7 +225,7 @@ const TaskBoards = () => {
           <div>
       {/* Render the specified JSX only when the task status is "To Do" */}
       {inReviewTasks.length > 0 && (
-        <div className="rounded-lg bg-white shadow-[0px_0px_8px_rgba(54,_89,_226,_0.16)] w-[270px] overflow-hidden flex flex-col items-start justify-start p-4 box-border gap-[10px]" onClick={handleAddNew} style={{ cursor: 'pointer' }}>
+        <div className="rounded-lg bg-white shadow-[0px_0px_8px_rgba(54,_89,_226,_0.16)] w-[270px] overflow-hidden flex flex-col items-start justify-start p-4 box-border gap-[10px]" onClick={handleEdit} style={{ cursor: 'pointer' }}>
           <div className="relative leading-[24px] font-semibold">
             {taskName}
           </div>
@@ -286,7 +290,7 @@ const TaskBoards = () => {
           <div>
       {/* Render the specified JSX only when the task status is "To Do" */}
       {completedTasks.length > 0 && (
-        <div className="rounded-lg bg-white shadow-[0px_0px_8px_rgba(54,_89,_226,_0.16)] w-[270px] overflow-hidden flex flex-col items-start justify-start p-4 box-border gap-[10px]" onClick={handleAddNew} style={{ cursor: 'pointer' }}>
+        <div className="rounded-lg bg-white shadow-[0px_0px_8px_rgba(54,_89,_226,_0.16)] w-[270px] overflow-hidden flex flex-col items-start justify-start p-4 box-border gap-[10px]" onClick={handleEdit} style={{ cursor: 'pointer' }}>
           <div className="relative leading-[24px] font-semibold">
             {taskName}
           </div>
