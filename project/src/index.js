@@ -5,13 +5,14 @@ import App from './App';
 import TaskBoards from './components/TaskBoards';
 import reportWebVitals from './reportWebVitals';
 import FrameInstance from './components/FrameInstance';
-
+import EditFrameInstance from './components/EditFrameInstance';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
     {/* <TaskBoards/> */}
     {/* <FrameInstance/> */}
+    {/* <EditFrameInstance/> */}
   </React.StrictMode>
 );
 

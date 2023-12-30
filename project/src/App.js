@@ -1,3 +1,4 @@
+import EditFrameInstance from './components/EditFrameInstance';
 import FrameInstance from './components/FrameInstance';
 import TaskBoards from './components/TaskBoards';
 import logo from './logo.svg';
@@ -10,6 +11,7 @@ function App() {
     <Routes>
       <Route path='/' element={<TaskBoards/>}/>
       <Route path='/Insert' element={<FrameInstance/>}/>
+      <Route path='/Data' element={<EditFrameInstance/>}/>
     </Routes>
     </BrowserRouter>
   );
